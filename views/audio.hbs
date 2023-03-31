@@ -4,13 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Audio Page</title>
 </head>
 <body>
-    <audio controls>
-    <source src="/audios/audio.mp3" type="audio/mp3">
-    </audio>
+    <h1 "hidden">Audio Page</h1>
 
-    <h1>Audio Page</h1>
+    <section>
+        <h2>Audio File</h2>
+    <audio id="myAudio" controls>
+    <source src="/audios/audio.mp3" type="audio/mp3">
+   
+    <p>
+    Your browser doesn't support HTML audio. You can download it from
+    <a href="../public/audios/audio.mp3">this link</a> instead.
+    </p>
+
+    </audio>
+        <div id="caption"></div>
+
+    <div id="total_audio_length" aria-label="Total length of the Video"></div>
+    <div class="a-controls">
+    <button tabindex="0" class="a-playpause control-button" aria-label="Play or Pause Button" accesskey="p">Play (p)</button>
+    <button tabindex="0" class="a-stop control-button" aria-label="Stop Audio Button" accesskey="s">Stop (s)</button>
+    <button tabindex="0" class="a-rewind control-button" aria-label="Rewind  Audio by 5 secs Button" accesskey="r">Rewind (r)</button>
+    <button tabindex="0" class="a-forward control-button" aria-label="Forward Audio by 5 secs Button" accesskey="f">Forward (f)</button>
+    <button tabindex="0" class="a-volumeUp control-button" aria-label="Increase Volume by .2% Button" accesskey="u">Volume Up (u)</button>
+    <button tabindex="0" class="a-volumeDown control-button" aria-label="Decrease Volume by .2% Button" accesskey="t">Volume Down (t)</button>
+    <button tabindex="0" class="a-speedUp control-button" aria-label="Increase Playback speed by .5% Button" accesskey="q">Speed Up (q)</button>
+    <button tabindex="0" class="a-speedDown control-button" aria-label="decrease Playback speed by .5% Button" accesskey="w">Speed Down (w)</button>
+    <div class="a-time control-button" aria-label="current time of the audio">00:00</div>
+    </div>
+
+    </section>
+<script src="/javascripts/Audiomain.js"></script>
 </body>
 </html>
