@@ -6,21 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/css/main.css' />
   </head>
   <body>
     <header>
   <nav>
-    <ul>
+    <ul class="main-nav">
       <li tabindex="0" class="nav-li"><a href="/" accesskey="h" >Home (h)</a></li>
       <li tabindex="0" class="nav-li"><a href="/audio" accesskey="a">Audio (a)</a></li>
       <li tabindex="0" class="nav-li"><a href="/video" accesskey="v">Video (v)</a></li>
     </ul>
+    <br>
+    <hr>
   </nav>
 </header>
 
     {{{body}}}
 
   <script src="/javascripts/main.js"></script>
+  <script src="/javascripts/Videomain.js" defer></script>
+  
   </body>
 </html>

@@ -66,7 +66,7 @@ function updateCaptions() {
     { start: 175, end: 176, text: "That's up to you, I guess." },
     { start: 176.2, end: 180.8, text: "Anyway, that's what we're up to this season on good sports from the TED audio collective." },
     { start: 182, end: 183, text: "See you soon." },
-    { start: 185, end: 194, text: "Follow good sport wherever you get your podcasts and on Apple podcasts. You can get good sports ad free and a week early by subscribing to Ted audio collective plus, start your free trial now via the good sport Show page." }
+    { start: 184, end: 188, text: "Follow good sport wherever you get your podcasts and on Apple podcasts. You can get good sports ad free and a week early by subscribing to Ted audio collective plus, start your free trial now via the good sport Show page." }
   ];
   
   function updateCaptions() {
@@ -172,6 +172,7 @@ AspeedDown.onclick = () => {
 document.addEventListener("keydown", (event) =>{
     if(event.key === "ArrowLeft" || event.key === "ArrowUp") {
         index = index === 0 ? AButtons.length - 1 : index - 1;
+        AButtons[index].style.border="5px solid blue";
     } else if (event.key === "ArrowRight" || event.key === "ArrowDown") {
         index = index === AButtons.length -1 ? 0 : index +1;
     } else {

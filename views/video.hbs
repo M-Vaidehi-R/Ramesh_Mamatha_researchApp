@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-<body>
+
+
+<div class="content">
     <video controls>
     <source src="/videos/video.mp4" type="video/mp4">
     <track default kind="captions" src="/videos/video_transcript.vtt" srclang="en">
@@ -15,6 +9,7 @@
     <a href="../public/videos/video.mp4">link to the video</a> instead.
     </p>
     </video>
+    <button class="caption_button" onclick="CaptionControl()" aria-label="To on or off captions" accesskey="m">CC On/Off (m)</button>
 
     <div class="v-controls">
     <button tabindex="0" class="v-playpause control-button" aria-label="Play or Pause Button" accesskey="p">Play (p)</button>
@@ -27,8 +22,4 @@
     <button tabindex="0" class="v-speedDown control-button" aria-label="decrease Playback speed by .5% Button" accesskey="w">Speed Down (w)</button>
     <div class="v-time control-button">00:00</div>
     </div>
-
-
-    <script src="/javascripts/Videomain.js"></script>
-</body>
-</html>
+</div>

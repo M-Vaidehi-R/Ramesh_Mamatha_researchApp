@@ -1,3 +1,26 @@
+
+
+    const VideoPlayer = document.querySelector("video"),
+    button_cap = document.querySelector(".caption_button"),
+    Vtrack = VideoPlayer.querySelector("track");
+
+  let caption_on = false;
+  button_cap.onclick = () => {
+    if (caption_on) {
+        VideoPlayer.textTracks[0].mode = 'hidden';
+        caption_on=false;
+        button_cap.textContent="Turn CC On";
+        console.log("caption off");
+      } else {
+        VideoPlayer.textTracks[0].mode = 'showing';
+        caption_on = 'true';
+        button_cap.textContent="Turn CC Off";
+        console.log("caption on");
+      }
+  }
+
+
+
 (() => {
 
 console.log("Videomain.js here..hehe");
@@ -24,6 +47,8 @@ VButtons[index].focus();
 //Video Player
 
 Videoplayer.removeAttribute("controls");
+
+
 
 VplayPauseBtn.onclick = () => {
     if(Videoplayer.paused){
@@ -144,6 +169,8 @@ document.addEventListener("keydown", (event) =>{
 });
 
 
-
-
 })();
+
+
+  
+  
